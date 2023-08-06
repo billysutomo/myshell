@@ -4,6 +4,8 @@ myshell is a learning project for replacing default OS shell. The main purpose o
 
 ## features to be implement
 
-- [x] current path
-- [ ] cd / change directory
+- [x] cd / change directory
+- [x] pipe command
+- [ ] chain command
+- [ ] autocomplete
 - [ ] color
