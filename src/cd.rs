@@ -39,12 +39,11 @@ pub fn change_directory(args: SplitWhitespace) -> Result<(), io::Error> {
 
 /**
  * supported
- * 1. cd ~
- * 2. cd ~/Engineering or directory with relative path
- * 3. cd . || current directory
- * 4. cd .. || step back directory
- * 5. cd - || or back to last history or path
- *
+ * 1. cd ~ || current home path
+ * 2. cd ~/directory || relative path
+ * 3. cd . || current path
+ * 4. cd .. || step back path
+ * 5. cd - || back to last path
  */
 fn extract_command(args: SplitWhitespace) -> (String, String) {
     let mut original_string: String = args.collect();
